@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polaroid Wall ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #f8f4ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .wall {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+      max-width: 1600px;
+    }
+    .polaroid {
+      width: 180px;
+      height: 220px;
+      perspective: 1000px;
+      cursor: pointer;
+      position: relative;
+      transform: rotate(var(--rotation));
+    }
+    .inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .polaroid.flipped .inner {
+      transform: rotateY(180deg);
+    }
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .front {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 10px 20px 10px;
+    }
+    .front img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid #ddd;
+    }
+    .caption {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      color: #444;
+      font-style: italic;
+      margin-top: 6px;
+    }
+    .back {
+      background: #fffbe6;
+      transform: rotateY(180deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      font-size: 14px;
+      text-align: center;
+      font-style: italic;
+      border: 2px dashed #ff9999;
+    }
+  </style>
+</head>
+<body>
+  <div class="wall">
+    <!-- Polaroid set -->
+    <!-- Repeat for 30 -->
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (1).jpg"><div class="caption">Orange Kitten on a slide</div></div>
+        <div class="back">You used this photo to wish me Happy Birthday</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (2).jpg"><div class="caption">Fazooli Barish</div></div>
+        <div class="back">We kissed and it started raining and hailing..me, my strawberry and an umbrella</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (3).jpg"><div class="caption">Long legs</div></div>
+        <div class="back">MUHEHEHEHE even my shadow is taller than you</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (4).jpg"><div class="caption">Stoinky Rat</div></div>
+        <div class="back">This is just me doing stupid stuff for you</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (5).jpg"><div class="caption">The Suitcase Rat</div></div>
+        <div class="back">Suitcase a suit and a really stinky body....Amna ka favourite Rat</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (6).jpg"><div class="caption">First Meetup</div></div>
+        <div class="back">Hug, thumb impressions and a day full of love and yumminesss</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (7).jpg"><div class="caption">Candid Shot 📸</div></div>
+        <div class="back">Random but yummy...from making long distance hearts to making hearts irl..the journey of stinky rat and strawberry owl</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (8).jpg"><div class="caption">Cutest Smile 💕</div></div>
+        <div class="back">I love how you captioned it "my baby" uwaaaaaaaa</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (9).jpg"><div class="caption">Fresh Non Stinky Rat</div></div>
+        <div class="back">Fresh , super fresh...and 100% Kissableee...yours all yours</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (10).jpg"><div class="caption">Dahi</div></div>
+        <div class="back">You once said you liked these pics...so i clicked more n more of em for you</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (11).jpg"><div class="caption">0.5x</div></div>
+        <div class="back">I look hella bald in this...but i remember u screaming.."You Look Sooo Cuteeee"</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (12).jpg"><div class="caption">Gulshan e Iqbal</div></div>
+        <div class="back">The Yummiest meetup...we hugged for hours...you gave me a beeegggg hug as well</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (13).jpg"><div class="caption">My Strawberry and umbrella</div></div>
+        <div class="back">That umbrella was a life saver...and you looked like such a lady while holding it...ilysm</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (14).jpg"><div class="caption">Goofy Us </div></div>
+        <div class="back">The day i got slapped...you were really angry at me...but a couple of slaps and some hugs fixed everything</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (15).jpg"><div class="caption">Red Strawberry</div></div>
+        <div class="back">You always look like a sweet choti si baby strawberry in red...My Lil Strawberry</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (16).jpg"><div class="caption">Super Jawline</div></div>
+        <div class="back">I just love this pic cause your jawline looks sooooo yummy in this...makes me wanna bite it..ilysm</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (17).jpg"><div class="caption">Pure Happiness </div></div>
+        <div class="back">Wigetable...us pairing pics...yummy and yummiest</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (18).jpg"><div class="caption">Queen</div></div>
+        <div class="back">You looked stunning this day , You look like a queen in this pic</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (19).jpg"><div class="caption">Nerd Amna!?</div></div>
+        <div class="back">I remember when u showed me these pics...u were really happy that ur friend took random pics of you </div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (20).jpg"><div class="caption">Random Shadi</div></div>
+        <div class="back">You flexed soo much...telling me k you looked really really yummy</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (21).jpg"><div class="caption">Nerd Amna Part 2</div></div>
+        <div class="back">Wottttt look at you studying and studying..miss 3.51 GPA</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (22).jpg"><div class="caption">Blueberry</div></div>
+        <div class="back">Mineeeeee and just mineeeeee....meri pyari blueberry....ilysm</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (23).jpg"><div class="caption">President Amna Mustfa</div></div>
+        <div class="back">You are the President of my heart...i love you a lottttt Miss Amna Mustfa</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (24).jpg"><div class="caption">Miss Magic ❄️</div></div>
+        <div class="back">I remember you organized the party for juniors..and u were really happy that it turned out really good and perfect</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (25).jpg"><div class="caption">Spring Bloom 🌼</div></div>
+        <div class="back">You’re the prettiest flower</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (26).jpg"><div class="caption">Killer Eyes</div></div>
+        <div class="back">I love the way you look back in this pic...i drown in your eyes..ilysm</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (27).jpg"><div class="caption">Ring</div></div>
+        <div class="back">Placed a ring on my baby</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (28).jpg"><div class="caption">Us🎀</div></div>
+        <div class="back">me and my strawberry after i lost two races </div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (29).jpg"><div class="caption">S21 Ultra </div></div>
+        <div class="back">SMD S21 Ultra...pretty nails and a bakwas S21 Ultra.</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (30).jpg"><div class="caption">The Amna herself ♾️</div></div>
+        <div class="back">I took this photo cause ap itni pyari lag rahi thi aese pics lete we...ilysm</div>
+      </div>
+    </div>
+    <div class="polaroid" onclick="this.classList.toggle('flipped')">
+      <div class="inner">
+        <div class="front"><img src="PIC (31).png"><div class="caption">Orange Rat</div></div>
+        <div class="back">ILYSM....you always find this pic super cute...and i just love this fact...i love you MOSTEST</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Random scattered tilt
+    document.querySelectorAll(".polaroid").forEach(p => {
+      let angle = (Math.random() * 14 - 7).toFixed(2) + "deg";
+      p.style.setProperty("--rotation", angle);
+    });
+  </script>
+</body>
+</html>
